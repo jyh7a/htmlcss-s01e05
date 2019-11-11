@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-        <title>05 Float</title>
-        <style>
-            body {
-                background-color: #ddd;
-            }
-            .wrapper {
-                background-color: white;
-                width: 600px;
-                margin: 50px auto;
-            }
-        </style>
-	</head>
-	<body>
 
-        <div class="wrapper">
-            <img src="img.png">
-            <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante
-            </p>
-        </div>
-       
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<title>05 Float</title>
+	<style>
+		body {
+			background-color: #ddd;
+		}
+
+		.wrapper {
+			background-color: white;
+			width: 600px;
+			margin: 50px auto;
+		}
+
+		.wrapper img {
+			float: left;
+			/* float: right; */
+			margin-right: 10px;
+		}
+
+		.clearFix::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<img src="img.png">
+		<p>
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam commodi doloribus excepturi explicabo ipsam
+			numquam at voluptates natus repellat a labore, suscipit quis ipsum et possimus, modi nostrum ut ad doloremque?
+			Blanditiis optio aliquid id, fugit numquam totam voluptatibus culpa. Tenetur facere culpa quibusdam quos eum,
+			recusandae tempore dolorum. Fugit quas nemo blanditiis dolor repellendus ab accusamus dignissimos aliquid
+			cupiditate quisquam porro nisi quos, repudiandae sed maiores omnis consequatur culpa! Aut non quasi, fuga iste
+			nemo officiis atque expedita est et recusandae labore deserunt laborum porro repudiandae, cum veniam maiores
+			velit animi accusamus impedit incidunt nostrum? Aperiam minus officia architecto.
+		</p>
+	</div>
+
+</body>
+
 </html>

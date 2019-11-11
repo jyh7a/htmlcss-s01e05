@@ -1,0 +1,189 @@
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #222;
+}
+
+.clearFix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  /* background: white; */
+  width: 800px;
+  margin: 0 auto;
+}
+
+.section {
+  background: dodgerblue;
+  color: yellow;
+  padding: 30px;
+  margin: 20px 0;
+  text-align: right;
+  overflow: hidden;
+}
+
+.section h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: normal;
+  line-height: 1;
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.section h1 span {
+  /* 부모에 절반 */
+  font-size: 0.5em;
+  float: left;
+  margin: 0 0.35em;
+  opacity: 0.5;
+}
+
+.section h1 span::after {
+  content: "kcal";
+  font-size: 0.5em;
+}
+
+.section.blue {
+  background: dodgerblue;
+  color: yellow;
+}
+
+.section.red {
+  background: orangered;
+  color: yellow;
+}
+
+.section.yellow {
+  background: yellow;
+  color: orangered;
+}
+
+.section-cover {
+  float: left;
+  width: 200px;
+  /* background: #000; */
+  margin: 0 -60px;
+  transition: margin 0.5s ease-in-out;
+}
+
+.section p {
+  width: 500px;
+  margin-left: auto;
+  line-height: 1.5;
+}
+
+.section:nth-child(even) {
+  text-align: left;
+}
+
+.section:nth-child(even) .section-cover {
+  float: right;
+}
+
+.section:nth-child(even) h1 span {
+  float: right;
+}
+
+.section:nth-child(even) p {
+  margin-left: initial;
+}
+
+.section:hover .section-cover {
+  margin: 0;
+}
+
+/*
+h1, p {
+	margin: 0;	
+}
+
+body {
+	background-color: #222;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 50px auto;
+	background-color: white;
+}
+
+.section {
+	width: 240px;
+	padding: 30px;
+	float: left;
+	margin-right: 30px;
+	text-align: center;
+}
+
+.section:last-child {
+	margin-right: 0;
+}
+
+
+.section.blue {
+	background-color: dodgerblue;
+	color: yellow;
+	margin-top: 20px;
+}
+
+.section.red {
+	background-color: orangered;
+	color: yellow;
+	margin-top: 50px;
+}
+
+.section.yellow {
+	background-color: yellow;
+	color: orangered;
+}
+
+.section::after {
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+.section h1 {
+	font-family: 'Anton', sans-serif;
+	font-weight: normal;
+	font-size: 90px;
+	line-height: 1;
+	margin: 30px 0;
+}
+
+.section h1 span {
+	font-size: 0.5em;
+	margin: 0 0.35em;
+	opacity: 0.5;
+	display: block;
+}
+
+
+.section h1 span::after {
+	content: 'kcal';
+	font-size: 0.5em;
+	margin: 0 0.2em;
+}
+
+.section-cover {
+   width: 200px;
+   margin-left: -60px;
+   opacity: 0.5;
+   transition: 0.5s ease-in-out;
+}
+
+.section:hover .section-cover {
+   margin: 0;
+   opacity: 1;
+ }
+ */
